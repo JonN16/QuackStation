@@ -1,0 +1,210 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+header {
+    background-color: #1c648c;
+    border: 1px solid rgb(0, 136, 255);
+    text-align: center;                   
+}
+
+header img{
+    height: 82px;
+    width: auto;
+}
+
+.container-imagens {
+    display: flex;
+    align-items: center; /* Alinha os botões e as imagens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 20px; /* Espaçamento em torno do contêiner */
+}
+
+
+main{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(230, 230, 250, 0.7)), /* Gradiente de branco para azul claro */
+    url('imagens/Captura de Tela (28).png') no-repeat center center fixed; /* Adicione sua imagem de nuvem aqui */
+background-size: cover; 
+    text-align: center;
+}
+
+.filmes {
+    display: flex; /* Usa flexbox para dispor as imagens lado a lado */
+    overflow: hidden; /* Oculta imagens que saem do contêiner */
+    width: 80%; /* Defina uma largura para o contêiner de imagens */
+    scroll-behavior: smooth; /* Para transições suaves ao rolar */
+}
+
+.filmes img{
+    height: 350px;
+    width: auto;
+}
+
+.img_pato {
+    border: 3px solid rgb(0, 136, 255);
+    margin: 10px; /* Espaçamento entre as imagens */
+    height: 200px; /* Defina uma altura fixa */
+    width: auto; /* A largura se ajusta automaticamente */
+    transition: transform 0.3s ease; /* Transição suave ao mudar o transform */
+}
+
+.botao-esquerdo, .botao-direito {
+    background-color: rgb(39, 142, 165);
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-esquerdo:hover, .botao-direito:hover {
+    background-color: rgb(0, 136, 255); /* Altera a cor ao passar o mouse */
+}
+
+.texto-container {
+    display: flex; /* Usar flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Coloca o conteúdo em coluna */
+    min-height: calc(100vh - 200px); /* Ajuste a altura mínima conforme necessário */
+    margin: 20px; /* Margem ao redor do contêiner */
+}
+
+.texto {
+    max-width: 1000px; /* Limita a largura do texto */
+    text-align: justify; /* Justifica o texto */
+    margin: 20px;
+    margin-left: 17%; /* Margem ao redor do texto */
+    background-color: white; /* Fundo branco para o texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.texto h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Fonte elegante para o título */
+    text-align: center;
+    color: rgb(39, 142, 165); /* Cor do título */
+}
+
+.texto p {
+    line-height: 1.6; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+} 
+
+.coluna_criadores {
+    display: flex; /* Exibe os criadores em uma linha */
+    flex-direction: row; /* Coloca os elementos em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-wrap: wrap; /* Permite que os criadores se ajustem na linha */
+}
+
+.criador {
+    display: flex; /* Exibe a imagem e o nome em coluna */
+    flex-direction: column; /* Coloca a imagem acima do nome */
+    align-items: center; /* Centraliza horizontalmente */
+    margin: 20px; /* Espaçamento entre os criadores */
+}
+
+.criador img {
+    width: 100px; /* Define uma largura fixa para as imagens */
+    height: 100px; /* Define uma altura fixa para as imagens */
+    border-radius: 50%; /* Transforma as imagens em círculos */
+    object-fit: cover; /* Mantém a proporção da imagem ao cortar */
+    border: 2px solid rgb(39, 142, 165); /* Opcional: adiciona uma borda */
+}
+
+.criador h2 {
+    margin-top: 10px; /* Espaçamento entre a imagem e o nome */
+    text-align: center; /* Centraliza o texto do nome */
+}
+
+.Instalador {
+    background-color: #f0f8ff; 
+    padding: 30px; 
+    border: 2px solid #1c648c; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 30px auto; 
+    max-width: 600px; 
+    justify-content: center;
+    text-align: center; 
+}
+
+.Instalador h1 {
+    font-size: 20px; 
+    color: black;
+    margin-bottom: 20px; 
+    font-weight: bold; 
+}
+
+.botao-download {
+    padding: 15px 30px; 
+    background-color: #1c648c; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    cursor: url('imagens/e003949c-0077-481d-bc6b-3005332adb22.png'), auto; 
+    font-size: 18px; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.botao-download:hover {
+    background-color: #104a70; 
+    transform: scale(1.05); 
+}
+
+footer {
+    background-color: #1c648c; /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.footer-container {
+    max-width: 1200px; /* Limita a largura do footer */
+    margin: 0 auto; /* Centraliza o footer */
+}
+
+.footer-content {
+    display: flex; /* Organiza os elementos em linha */
+    flex-direction: column; /* Coloca o texto e os ícones em coluna */
+    align-items: center; /* Centraliza os elementos na coluna */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Margem entre os textos */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+.social-icons {
+    list-style-type: none; /* Remove a bolinha da lista */
+    padding: 0; /* Remove o padding padrão */
+    display: flex; /* Exibe os ícones em linha */
+    margin: 0px 0; /* Margem ao redor dos ícones */
+}
+
+.social-icons li {
+    margin: 0 5px; /* Espaçamento entre cada ícone */
+}
+
+.social-icons li a img {
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px; /* Tamanho dos ícones */
+    transition: transform 0.3s ease;
+    cursor: url('imagens/e003949c-0077-481d-bc6b-3005332adb22.png'), auto;  /* Animação suave ao passar o mouse */
+}
+
+.social-icons li a img:hover {
+    transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+
+

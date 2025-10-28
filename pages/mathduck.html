@@ -1,0 +1,68 @@
+<!-- Math Duck - Página de Download -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Duck - GameStore</title>
+    <link rel="stylesheet" href="../css/downloads.css">
+</head>
+<body>
+    <a href="../index.html" class="back-link">← Voltar</a>
+    <div class="hero-section">
+        <div class="age-rating">LIVRE</div>
+        <div class="hero-content">
+            <h1 class="hero-title">Math Duck</h1>
+            <p class="hero-subtitle">Aprenda matemática de forma divertida!</p>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="game-info">
+            <p class="game-description">
+                Aventura matemática onde nosso pato protagonista resolve problemas de matemática básica. As crianças ajudam o pato a coletar números e símbolos matemáticos corretos para resolver equações simples. Com níveis progressivos, o jogo ensina adição, subtração e conceitos básicos de matemática de forma divertida e interativa.
+            </p>
+            <div class="game-features">
+                <div class="feature-item"><div class="feature-icon">🎮</div><div class="feature-title">Puzzle & Lógica</div></div>
+                <div class="feature-item"><div class="feature-icon">👥</div><div class="feature-title">Singleplayer</div></div>
+                <div class="feature-item"><div class="feature-icon">🏆</div><div class="feature-title">Conquistas</div></div>
+                <div class="feature-item"><div class="feature-icon">☁️</div><div class="feature-title">Save Local</div></div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <img src="../imagens/2ad3f76e-d8a8-4277-b0d2-fe7510901f2f.png" alt="Capa do Math Duck" class="game-cover">
+            <div class="price-section">
+                <div class="price">Grátis</div>
+                <div class="price-label">Preço final</div>
+            </div>
+            <a href="#" class="download-btn">Baixar Agora</a>
+            <div class="game-specs">
+                <div class="specs-title">Especificações</div>
+                <div class="spec-item"><span class="spec-label">Tamanho:</span><span class="spec-value">45MB</span></div>
+                <div class="spec-item"><span class="spec-label">Desenvolvedor:</span><span class="spec-value">Equipe Pato</span></div>
+                <div class="spec-item"><span class="spec-label">Gênero:</span><span class="spec-value">Educativo</span></div>
+                <div class="spec-item"><span class="spec-label">Plataforma:</span><span class="spec-value">Windows</span></div>
+                <div class="spec-item"><span class="spec-label">Idiomas:</span><span class="spec-value">Português, Inglês</span></div>
+            </div>
+        </div>
+        <div class="gallery-section">
+            <h2 class="gallery-title">Screenshots & Vídeos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="../imagens/Captura de Tela (26).png" alt="Gameplay 1"></div>
+                <div class="gallery-item"><img src="../imagens/Captura de Tela (27).png" alt="Gameplay 2"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Lightbox/modal opcional
+            });
+        });
+        window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero-section');
+            const scrolled = window.pageYOffset;
+            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        });
+    </script>
+</body>
+</html>

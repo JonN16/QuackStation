@@ -1,0 +1,107 @@
+<!-- Layout inspirado na Epic Games Store -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITULO}} - GameStore</title>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Voltar</a>
+    
+    <div class="hero-section">
+        <div class="age-rating">{{CLASSIFICACAO}}</div>
+        <div class="hero-content">
+            <h1 class="hero-title">{{TITULO}}</h1>
+            <p class="hero-subtitle">{{DESCRICAO_CURTA}}</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="game-info">
+            <p class="game-description">
+                {{DESCRICAO_COMPLETA}}
+            </p>
+            
+            <div class="game-features">
+                <div class="feature-item">
+                    <div class="feature-icon">🎮</div>
+                    <div class="feature-title">Ação & Aventura</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <div class="feature-title">Multijogador</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🏆</div>
+                    <div class="feature-title">Conquistas</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">☁️</div>
+                    <div class="feature-title">Save na Nuvem</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <img src="{{CAPA}}" alt="Capa do {{TITULO}}" class="game-cover">
+            
+            <div class="price-section">
+                <div class="price">{{PRECO}}</div>
+                <div class="price-label">Preço final</div>
+            </div>
+
+            <a href="{{LINK_DOWNLOAD}}" class="download-btn">Baixar Agora</a>
+
+            <div class="game-specs">
+                <div class="specs-title">Especificações</div>
+                <div class="spec-item">
+                    <span class="spec-label">Tamanho:</span>
+                    <span class="spec-value">{{TAMANHO}}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Desenvolvedor:</span>
+                    <span class="spec-value">{{DESENVOLVEDOR}}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Gênero:</span>
+                    <span class="spec-value">{{GENERO}}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Plataforma:</span>
+                    <span class="spec-value">{{PLATAFORMA}}</span>
+                </div>
+                <div class="spec-item">
+                    <span class="spec-label">Idiomas:</span>
+                    <span class="spec-value">{{IDIOMAS}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-section">
+            <h2 class="gallery-title">Screenshots & Vídeos</h2>
+            <div class="gallery-grid">
+                <!-- Substitua pelas suas imagens reais -->
+                {{GALERIA_ITEMS}}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Funcionalidade da galeria
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Aqui você pode adicionar um lightbox ou modal para visualizar a imagem em tamanho completo
+                console.log('Imagem clicada:', this);
+            });
+        });
+
+        // Efeito paralax suave no hero
+        window.addEventListener('scroll', function() {
+            const hero = document.querySelector('.hero-section');
+            const scrolled = window.pageYOffset;
+            hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        });
+    </script>
+</body>
+</html>
